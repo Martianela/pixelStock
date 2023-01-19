@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import FrontPage from "./FrontPage";
 import Navbar from "./Navbar";
 import SlideBar from "./SlideBar";
 
-const Home = () => {
+const Home = ({ setSelectedImg }) => {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("");
@@ -18,6 +19,7 @@ const Home = () => {
         setIsLoading(false);
       });
   }, [term]);
+
   return (
     <div className="w-full">
       <div className="">
@@ -48,13 +50,20 @@ const Home = () => {
           <div className=" grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center p-4  ">
             {images.map((image, index) => (
               <>
-                <div className=" mx-auto overflow-hidden w-full ">
-                  <img
-                    key={index}
-                    src={image.webformatURL}
-                    alt="img"
-                    className="w-full object-cover"
-                  />
+                <div
+                  className=" mx-auto overflow-hidden w-full "
+                  onClick={() => {
+                    setSelectedImg(image);
+                  }}
+                  key={index}
+                >
+                  <Link to={`/${image.id}`}>
+                    <img
+                      src={image.webformatURL}
+                      alt="img"
+                      className="w-full object-cover"
+                    />
+                  </Link>
                 </div>
 
                 {/* <Cards key={image.id} image={image} /> */}

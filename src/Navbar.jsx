@@ -5,7 +5,9 @@ const Navbar = () => {
   const [menu, setMenu] = useState(true);
   return (
     <div className="flex items-center justify-between py-3 px-3 w-full bg-white">
-      <div className="text-5xl font-medium">🅿🆂</div>
+      <div className="text-5xl font-medium">
+        <a href="/"> 🅿🆂</a>
+      </div>
       <div>
         <ul className="flex gap-5 items-center">
           <li className="hidden sm:block">
@@ -14,7 +16,7 @@ const Navbar = () => {
           <li>
             <a
               href="/"
-              className="border-black/40 border rounded-3xl px-4 py-3 hidden sm:block"
+              className="border-black/40 border rounded-3xl px-4 py-3 hidden sm:block "
             >
               join
             </a>
@@ -22,7 +24,7 @@ const Navbar = () => {
           <li>
             <a
               href="/"
-              className=" bg-green-400 text-white font-semibold rounded-3xl px-7 py-3"
+              className=" bg-green-400 text-white font-semibold rounded-3xl px-7 py-3 "
             >
               Upload
             </a>
@@ -41,7 +43,7 @@ const Navbar = () => {
           </li>{" "}
         </ul>
         {!menu && (
-          <div className="absolute top-[65px] right-0 bg-white py-10  px-9 items-center rounded-md w-[300px]">
+          <div className="absolute top-[65px] right-0 bg-gray-800 text-white py-10  px-9 items-center rounded-md w-[300px]">
             <ul className="flex gap-5 text-base flex-col w-full text-center">
               <li>
                 <a href="/">Home</a>
@@ -57,13 +59,13 @@ const Navbar = () => {
                   login
                 </a>
                 <a
-                  className="px-7 py-2  rounded-full  text-white bg-black/80"
+                  className="px-7 py-2  rounded-full  text-white bg-blue-700 "
                   href="/"
                 >
                   signup
                 </a>
               </li>{" "}
-              <li className="bg-black/10 text-gray-700 px-6 py-3 rounded-[100px] text-center cursor-pointer">
+              <li className="bg-green-500  px-6 py-2 rounded-[100px] text-center cursor-pointer">
                 <a href="/">Get Premium</a>
               </li>
             </ul>

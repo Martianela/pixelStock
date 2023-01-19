@@ -35,27 +35,27 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="text-2xl text-white flex gap-4 my-14 text-center justify-center md:justify-start">
-            <li className="bg-[#34B3F1] p-2 rounded-[100%] max-w-fit ">
+            <li className="bg-blue-500 p-2 rounded-[100%] max-w-fit ">
               <a href="www.facebook.com">
                 <FaFacebookF />
               </a>
             </li>
-            <li className="bg-[#34B3F1] p-2 rounded-[100%] max-w-fit ">
+            <li className="bg-blue-500 p-2 rounded-[100%] max-w-fit ">
               <a href="www.instagram.com">
                 <FaInstagram />
               </a>
             </li>
-            <li className="bg-[#34B3F1] p-2 rounded-[100%] max-w-fit ">
+            <li className="bg-blue-500  p-2 rounded-[100%] max-w-fit ">
               <a href="www.linkedin.com">
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="bg-[#34B3F1] p-2 rounded-[100%] max-w-fit ">
+            <li className="bg-blue-500  p-2 rounded-[100%] max-w-fit ">
               <a href="www.twitter.com">
                 <FaTwitter />
               </a>
             </li>
-            <li className="bg-[#34B3F1] p-2 rounded-[100%] max-w-fit ">
+            <li className="bg-blue-500  p-2 rounded-[100%] max-w-fit ">
               <a href="www.twitter.com">
                 <FaRedditAlien />
               </a>
